@@ -1,0 +1,17 @@
+@import './variables';
+
+@import './choices.min';
+@import './swiper.min';
+
+
+@import './base.scss';
+@import './header';
+@import './hero';
+@import './about';
+@import './galery';
+@import './select';
+
+
+.hide {
+  display: none;
+}

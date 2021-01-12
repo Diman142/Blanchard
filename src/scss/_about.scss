@@ -1,0 +1,17 @@
+.about {
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+@media (max-width: 1440px) {
+  .about {
+    padding-top: 84px;
+  }
+}
+
+@media (max-width: 540px) {
+  .about {
+    padding-top: 53px;
+    padding-bottom: 40px;
+  }
+}

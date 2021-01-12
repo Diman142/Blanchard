@@ -1,0 +1,76 @@
+.select {
+  &-wrap {
+    position: relative;
+    width: 400px;
+  }
+
+
+
+  &-header {
+    height: 40px;
+
+    &__selectable {
+      color: #fff;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 40px;
+      text-indent: 15px;
+      border: 1px solid #FFFFFF;
+      border-radius: 6px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 10px;
+        height: 10px;
+        background-image: url('../icons/downArrow.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+
+  }
+
+  &__dropdown {
+    border: 1px solid #999999;
+    border-radius: 6px;
+  }
+
+  &__item {
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    text-indent: 15px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #999999;
+    }
+  }
+
+}
+
+
+@media (max-width: 1870px) {
+
+  .select {
+    &-wrap {
+      width: 100%;
+    }
+  }
+
+}
+
+
+@media(max-width: 1440px) {
+  .select {
+    &-wrap {
+      width: 280px;
+    }
+  }
+}
