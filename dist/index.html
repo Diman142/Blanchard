@@ -1,1 +1,251 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"><link rel="stylesheet" href="./css/style.css"><title>Blanchard</title></head><body><header class="header"><div class="burger"><div class="burger-line burger-line__first"></div><div class="burger-line burger-line__second"></div><div class="burger-line burger-line__third"></div></div><a href="#" class="header__logo"><img class="header__img" src="./img/logo.png" alt="Logo"></a><nav class="header-nav"><ul class="header-nav__list"><li class="header-nav__item" tabindex="0"><a class="header-nav__link">О нас</a></li><li class="header-nav__item" tabindex="0"><a class="header-nav__link">Галерея</a></li><li class="header-nav__item" tabindex="0"><a class="header-nav__link">Каталог</a></li><li class="header-nav__item" tabindex="0"><a class="header-nav__link">События</a></li><li class="header-nav__item" tabindex="0"><a class="header-nav__link">Издания</a></li><li class="header-nav__item" tabindex="0"><a class="header-nav__link">Проекты</a></li><li class="header-nav__item" tabindex="0"><a class="header-nav__link">Контакты</a></li></ul></nav><a class="header-sign" tabindex="0">Войти </a><button type="submit" class="hero-search__button hero-search__button_header"></button></header><main><section class="hero"><div class="hero-header"><div class="hero-wrapper"><div class="hero-wrapper-focus" tabindex="0"><select class="hero-list js-choice" onchange="window.location.href=this.options[this.selectedIndex].value"><option class="hero-list__item" selected="selected" value="#" disabled="disabled">Реализм</option><option class="hero-list__item hero-list__item_bg1" value="https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D0%BD%D1%82%D0%BE%D1%80%D0%B5%D1%82%D1%82%D0%BE">Тинторетто</option><option class="hero-list__item hero-list__item_bg2" value="https://ru.wikipedia.org/wiki/%D0%A4%D1%80%D0%B8%D0%B4%D1%80%D0%B8%D1%85,_%D0%9A%D0%B0%D1%81%D0%BF%D0%B0%D1%80_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4">Фридрих</option><option class="hero-list__item hero-list__item_bg3" value="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwyUk3M2D0Uriw-8LWC_su7L2w4WLDhS0X9ikAiQ0KFzZd2HFh78X2CzsA8CYZrw&q=%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0%D1%80%D0%B4%D0%BE+%D0%B4%D0%B0+%D0%B2%D0%B8%D0%BD%D1%87%D0%B8&oq=%D0%9B%D0%B5%D0%BE%D0%BD%D0%B0&aqs=chrome.1.69i57j46i433j0j0i433j0j46i433j0.1890j0j7&sourceid=chrome&ie=UTF-8">Леонардо</option><option class="hero-list__item hero-list__item_bg4" value="https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B0_%D0%92%D0%B5%D1%80%D1%80%D0%BE%D0%BA%D0%BA%D1%8C%D0%BE">Верроккьо</option><option class="hero-list__item hero-list__item_bg5" value="https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BD%D0%B5,_%D0%AD%D0%B4%D1%83%D0%B0%D1%80%D0%B4">Мане</option></select></div><div class="hero-wrapper-focus" tabindex="0"><select class="hero-list js-choice" onchange="window.location.href=this.options[this.selectedIndex].value"><option class="hero-list__item" selected="selected" value="#" disabled="disabled">Импрессионизм</option><option class="hero-list__item hero-list__item_bg1" value="https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D0%BD%D1%82%D0%BE%D1%80%D0%B5%D1%82%D1%82%D0%BE">Тинторетто</option><option class="hero-list__item hero-list__item_bg2" value="https://ru.wikipedia.org/wiki/%D0%A4%D1%80%D0%B8%D0%B4%D1%80%D0%B8%D1%85,_%D0%9A%D0%B0%D1%81%D0%BF%D0%B0%D1%80_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4">Фридрих</option><option class="hero-list__item hero-list__item_bg3" value="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwyUk3M2D0Uriw-8LWC_su7L2w4WLDhS0X9ikAiQ0KFzZd2HFh78X2CzsA8CYZrw&q=%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0%D1%80%D0%B4%D0%BE+%D0%B4%D0%B0+%D0%B2%D0%B8%D0%BD%D1%87%D0%B8&oq=%D0%9B%D0%B5%D0%BE%D0%BD%D0%B0&aqs=chrome.1.69i57j46i433j0j0i433j0j46i433j0.1890j0j7&sourceid=chrome&ie=UTF-8">Леонардо</option><option class="hero-list__item hero-list__item_bg4" value="https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B0_%D0%92%D0%B5%D1%80%D1%80%D0%BE%D0%BA%D0%BA%D1%8C%D0%BE">Верроккьо</option><option class="hero-list__item hero-list__item_bg5" value="https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BD%D0%B5,_%D0%AD%D0%B4%D1%83%D0%B0%D1%80%D0%B4">Мане</option></select></div><div class="hero-wrapper-focus" tabindex="0"><select class="hero-list js-choice" onchange="window.location.href=this.options[this.selectedIndex].value"><option class="hero-list__item" selected="selected" value="#" disabled="disabled">Постимпрессионизм</option><option class="hero-list__item hero-list__item_bg1" value="https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D0%BD%D1%82%D0%BE%D1%80%D0%B5%D1%82%D1%82%D0%BE">Тинторетто</option></select></div><div class="hero-wrapper-focus" tabindex="0"><select class="hero-list js-choice" onchange="window.location.href=this.options[this.selectedIndex].value"><option class="hero-list__item" selected="selected" value="#" disabled="disabled">Авангард</option><option class="hero-list__item hero-list__item_bg1" value="https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D0%BD%D1%82%D0%BE%D1%80%D0%B5%D1%82%D1%82%D0%BE">Тинторетто</option><option class="hero-list__item hero-list__item_bg2" value="https://ru.wikipedia.org/wiki/%D0%A4%D1%80%D0%B8%D0%B4%D1%80%D0%B8%D1%85,_%D0%9A%D0%B0%D1%81%D0%BF%D0%B0%D1%80_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4">Фридрих</option><option class="hero-list__item hero-list__item_bg3" value="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwyUk3M2D0Uriw-8LWC_su7L2w4WLDhS0X9ikAiQ0KFzZd2HFh78X2CzsA8CYZrw&q=%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0%D1%80%D0%B4%D0%BE+%D0%B4%D0%B0+%D0%B2%D0%B8%D0%BD%D1%87%D0%B8&oq=%D0%9B%D0%B5%D0%BE%D0%BD%D0%B0&aqs=chrome.1.69i57j46i433j0j0i433j0j46i433j0.1890j0j7&sourceid=chrome&ie=UTF-8">Леонардо</option></select></div><div class="hero-wrapper-focus" tabindex="0"><select class="hero-list js-choice" onchange="window.location.href=this.options[this.selectedIndex].value"><option class="hero-list__item" selected="selected" value="#" disabled="disabled">Футуризм</option><option class="hero-list__item hero-list__item_bg1" value="https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D0%BD%D1%82%D0%BE%D1%80%D0%B5%D1%82%D1%82%D0%BE">Тинторетто</option><option class="hero-list__item hero-list__item_bg2" value="https://ru.wikipedia.org/wiki/%D0%A4%D1%80%D0%B8%D0%B4%D1%80%D0%B8%D1%85,_%D0%9A%D0%B0%D1%81%D0%BF%D0%B0%D1%80_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4">Фридрих</option><option class="hero-list__item hero-list__item_bg3" value="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwyUk3M2D0Uriw-8LWC_su7L2w4WLDhS0X9ikAiQ0KFzZd2HFh78X2CzsA8CYZrw&q=%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0%D1%80%D0%B4%D0%BE+%D0%B4%D0%B0+%D0%B2%D0%B8%D0%BD%D1%87%D0%B8&oq=%D0%9B%D0%B5%D0%BE%D0%BD%D0%B0&aqs=chrome.1.69i57j46i433j0j0i433j0j46i433j0.1890j0j7&sourceid=chrome&ie=UTF-8">Леонардо</option><option class="hero-list__item hero-list__item_bg5" value="https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BD%D0%B5,_%D0%AD%D0%B4%D1%83%D0%B0%D1%80%D0%B4">Мане</option></select></div></div><form action="#" class="hero-search" tabindex="0"><button type="submit" class="hero-search__button"></button> <input type="search" class="hero-search__field"></form></div><div class="container container-hero"><div class="hero-body"><h1 class="hero-body__title">Прикоснитеcь к прекрасному</h1><p class="hero-body__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p><button type="button" class="hero-body__btn">Подписаться на рассылку</button></div></div></section><section class="about"><div class="container container-about"><h2 class="title">О нас</h2><p class="text text_about">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p></div></section><section class="galery"><div class="container container-galery"><h2 class="title title_white">Галерея</h2><div class="galery-wrapper"><div class="galery-wrapper-left"><div><p class="galery__note galery__note_mbh">Фильтровать по:</p><select class="galery-list"><option class="galery-list__item">Автор</option><option class="galery-list__item">Направление</option><option class="galery-list__item">Техника</option></select></div><p class="galery__note galery__note_mbb">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="galery__link">авторизуйтесь</a>, либо воспользуйтесь лицензией.</p></div><div class="galery-wrapper-right"><div class="swiper-container"><div class="swiper-wrapper"><div class="swiper-slide user-slide"><img src="./img/galery1.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery2.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery3.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery4.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery5.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery6.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery7.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery8.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery9.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery10.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery11.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery12.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery13.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery14.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery15.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery16.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery17.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery18.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery19.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery20.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery21.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery22.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery23.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery24.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery25.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery26.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery27.jpg" class="user-slide-img" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery28.jpg" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery29.jpg" alt="slide"></div><div class="swiper-slide user-slide"><img src="./img/galery30.jpg" alt="slide"></div></div></div><div class="slider-arrows"><div class="slider-button slider-button-prev" tabindex="0"></div><div class="slider__text"></div><div class="slider-button slider-button-next" tabindex="0"></div></div></div><p class="galery__note galery__note_second">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="galery__link">авторизуйтесь</a>, либо воспользуйтесь лицензией.</p></div></div></section></main><footer></footer><script src="./js/choices.min.js"></script><script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script><script src="./js/swiper.min.js"></script><script src="./js/script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Blanchard</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container container-header">
+      <div class="burger">
+        <div class="burger-line burger-line__first"></div>
+        <div class="burger-line burger-line__second"></div>
+        <div class="burger-line burger-line__third"></div>
+      </div><a href="#" class="header__logo"><img class="header__img" src="./img/logo.png" alt="Logo"></a>
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__item"><a class="header-nav__link" href="#">О нас</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Галерея</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Каталог</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">События</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Издания</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Проекты</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
+        </ul>
+      </nav><a class="header-sign" tabindex="0">Войти </a><button type="submit"
+        class="hero-search__button hero-search__button_header"></button>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-header">
+        <div class="container container-herotop">
+          <div class="hero-wrapper">
+            <div class="hero-list">
+              <div class="hero-list__header">Реализм <span class="hero-list__arrow"></span></div>
+              <ul class="hero-dropdown hide">
+                <li class="hero-dropdown__item hero-dropdown__item-bg1">Тринторетто</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg2">Фридрих</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg3">Леонардо</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg4">Веррокьо</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg5">Рафаэль</li>
+              </ul>
+            </div>
+            <div class="hero-list">
+              <div class="hero-list__header">Импрессионизм <span class="hero-list__arrow"></span></div>
+              <ul class="hero-dropdown hide">
+                <li class="hero-dropdown__item hero-dropdown__item-bg1">Тринторетто</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg2">Фридрих</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg3">Леонардо</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg4">Веррокьо</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg5">Рафаэль</li>
+              </ul>
+            </div>
+            <div class="hero-list">
+              <div class="hero-list__header">Постимпрессионизм <span class="hero-list__arrow"></span></div>
+              <ul class="hero-dropdown hide">
+                <li class="hero-dropdown__item hero-dropdown__item-bg1">Тринторетто</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg2">Фридрих</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg3">Леонардо</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg4">Веррокьо</li>
+              </ul>
+            </div>
+            <div class="hero-list">
+              <div class="hero-list__header">Авангард <span class="hero-list__arrow"></span></div>
+              <ul class="hero-dropdown hide">
+                <li class="hero-dropdown__item hero-dropdown__item-bg1">Тринторетто</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg2">Фридрих</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg3">Леонардо</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg4">Веррокьо</li>
+              </ul>
+            </div>
+            <div class="hero-list">
+              <div class="hero-list__header">Футуризм <span class="hero-list__arrow"></span></div>
+              <ul class="hero-dropdown hide">
+                <li class="hero-dropdown__item hero-dropdown__item-bg1">Тринторетто</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg2">Фридрих</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg3">Леонардо</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg4">Веррокьо</li>
+              </ul>
+            </div>
+          </div>
+          <form action="#" class="hero-search" tabindex="0"><button type="submit" class="hero-search__button"></button>
+            <input type="search" class="hero-search__field" placeholder="Поиск по сайту"></form>
+        </div>
+      </div>
+      <div class="container container-hero">
+        <div class="hero-body">
+          <h1 class="hero-body__title">Прикоснитеcь к прекрасному</h1>
+          <p class="hero-body__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий
+            создаёт предпосылки для новых предложений.</p><button type="button" class="hero-body__btn">Подписаться на
+            рассылку</button>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container container-about">
+        <h2 class="title">О нас</h2>
+        <p class="text text_about">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
+          однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения
+          внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта
+          влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что
+          высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда
+          внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках
+          спецификации современных стандартов, действия представителей оппозиции набирают популярность среди
+          определенных слоев населения, а значит, должны быть разоблачены.</p>
+      </div>
+    </section>
+    <section class="galery">
+      <div class="container container-galery">
+        <h2 class="title title_white">Галерея</h2>
+        <div class="galery-wrapper">
+          <div class="galery-wrapper-left">
+            <div>
+              <p class="galery__note galery__note_mbh">Фильтровать по:</p><select class="galery-list">
+                <option class="galery-list__item">Автор</option>
+                <option class="galery-list__item">Направление</option>
+                <option class="galery-list__item">Техника</option>
+              </select>
+            </div>
+            <p class="galery__note galery__note_mbb">Вам предоставляется 10 бесплатных скачиваний. Для увеличения
+              количества скачиваний <a class="galery__link">авторизуйтесь</a>, либо воспользуйтесь лицензией.</p>
+          </div>
+          <div class="galery-wrapper-right">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide user-slide"><img src="./img/galery1.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery2.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery3.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery4.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery5.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery6.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery7.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery8.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery9.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery10.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery11.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery12.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery13.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery14.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery15.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery16.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery17.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery18.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery19.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery20.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery21.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery22.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery23.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery24.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery25.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery26.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery27.jpg" class="user-slide-img" alt="slide">
+                </div>
+                <div class="swiper-slide user-slide"><img src="./img/galery28.jpg" alt="slide"></div>
+                <div class="swiper-slide user-slide"><img src="./img/galery29.jpg" alt="slide"></div>
+                <div class="swiper-slide user-slide"><img src="./img/galery30.jpg" alt="slide"></div>
+              </div>
+            </div>
+            <div class="slider-arrows">
+              <div class="slider-button slider-button-prev" tabindex="0"></div>
+              <div class="slider__text"></div>
+              <div class="slider-button slider-button-next" tabindex="0"></div>
+            </div>
+          </div>
+          <p class="galery__note galery__note_second">Вам предоставляется 10 бесплатных скачиваний. Для увеличения
+            количества скачиваний <a class="galery__link">авторизуйтесь</a>, либо воспользуйтесь лицензией.</p>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="catalog">
+      <div class="container container-catalog">
+        <div class="catalog-header">
+          <h2 class="title">Каталог</h2>
+          <div class="catalog__flag"></div>
+          <div class="catalog__flag"></div>
+          <div class="catalog__flag"></div>
+          <div class="catalog__flag"></div>
+          <div class="catalog__flag"></div>
+        </div>
+
+        <p class="text text_catalog">Акционеры крупнейших компаний, которые представляют собой яркий пример
+          континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы
+          этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство,
+          нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на
+          независимые элементы. </p>
+
+        <div class="catalog-main">
+          <ul class="catalog-cards">
+            <li class="catalog-cards_item"></li>
+            <li class="catalog-cards_item"></li>
+            <li class="catalog-cards_item"></li>
+            <li class="catalog-cards_item"></li>
+            <li class="catalog-cards_item"></li>
+          </ul>
+          <ul class="catalog-accordion">
+            <div class="asking-wrapper asking-padding">
+              <p class="asking-text">Из чего формируется конечная стоимость проекта?</p>
+              <button class="asking-plus" aria-label="Развернуть"></button>
+            </div>
+            <ul class="catalog-list">
+              <li class="catalog-list__item">Бенедетто ди Биндо</li>
+              <li class="catalog-list__item">Джованни Бонсиньори</li>
+              <li class="catalog-list__item">Веккьетта</li>
+              <li class="catalog-list__item"></li>
+              <li class="catalog-list__item"></li>
+              <li class="catalog-list__item"></li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </section> -->
+  </main>
+  <footer></footer>
+  <script src="./js/choices.min.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

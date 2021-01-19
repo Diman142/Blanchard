@@ -1,117 +1,5 @@
-.choices {
-
-  &__inner {
-    position: relative;
-    padding: 0;
-    min-height: 30px;
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-  }
-
-  &__item {
-    width: 100%;
-    height: 40px;
-    background-position: center, center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-
-    &--selectable {
-      color: $white;
-      font-size: 18px;
-      font-weight: 400;
-
-      &:hover {
-        color: $main;
-      }
-
-      &:active {
-        color: $active;
-      }
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
-
-  }
-}
-
-
-
-
-.choices[data-type*="select-one"]::after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  height: 27px;
-  width: 35px;
-  right: 0;
-  top: 12px;
-  background-image: url('../icons/downArrow.svg');
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: 13px 8px;
-  border: none;
-  margin-top: -10.5px;
-  z-index: 20;
-}
-
-
-.choices[data-type*="select-one"]:hover::after {
-  background-image: url('../icons/downArrowHover.svg');
-}
-
-
-.choices .choices__list .choices__list .choices__item--disabled {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-
-
-.choices[data-type*="select-one"].is-open::after {
-  background-image: url('../icons/upArrow.svg');
-  border: none;
-}
-
-
-.choices__list--dropdown {
-  width: 300px;
-  height: 300px;
-  padding-top: 40px;
-  padding-bottom: 51px;
-  padding-right: 39px;
-  padding-left: 39px;
-  background-color: rgba(0, 0, 0, .4);
-  border: none;
-  overflow-y: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.choices__list--dropdown::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-}
-
-
-.simplebar-scrollbar::before {
-  background-color: black;
-}
-
-
-.simplebar-track.simplebar-vertical {
-  width: 7px;
-}
-
-.simplebar-vertical {
-  background-color: $main;
-}
-
 .hero {
-  min-height: 702px;
+  min-height: 700px;
   background-image: url('../img/hero_bg1.jpg');
   background-repeat: no-repeat;
   background-size: 101%;
@@ -138,36 +26,109 @@
   &-header {
     width: 100%;
     min-height: 70px;
-    padding-right: 146px;
-    padding-left: 152px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  &-list {
-    display: flex;
-
+    padding-top: 20px;
   }
 
   &-wrapper {
     display: flex;
+  }
 
-    &-focus {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+  &-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
 
-      &:focus {
-        outline: 2px solid $active;
+    &:not(:first-child) {
+      margin-left: 92px;
+    }
+
+    &__header {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 400;
+      transition: color .2s ease;
+
+      &:active {
+        color: $active;
+      }
+    }
+
+    &__arrow {
+      display: inline-block;
+      width: 16px;
+      height: 9px;
+      background-image: url('../icons/downArrow.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
+
+    &:hover {
+      .hero-list__header {
+        color: $hover;
       }
 
-      &:not(:last-child) {
-        margin-right: 93px;
+      .hero-list__arrow {
+        background-image: url('../icons/downArrowHover.svg');
+
       }
     }
   }
+
+  &-dropdown {
+    position: absolute;
+    top: 43px;
+    width: 300px;
+    height: 300px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.4);
+
+
+
+    &__item {
+      width: 220px;
+      height: 40px;
+      padding-top: 9px;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 400;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      text-indent: 14px;
+
+
+
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      &-bg1 {
+        background-image: url('../img/option0.jpg');
+      }
+
+      &-bg2 {
+        background-image: url('../img/option1.jpg');
+      }
+
+      &-bg3 {
+        background-image: url('../img/option2.jpg');
+      }
+
+      &-bg4 {
+        background-image: url('../img/option3.jpg');
+      }
+
+      &-bg5 {
+        background-image: url('../img/option4.jpg');
+      }
+    }
+  }
+
+
 
   &-search {
     display: flex;
@@ -179,7 +140,7 @@
 
     &__field {
       width: 218px;
-      padding-bottom: 6px;
+      padding-bottom: 7px;
       font-family: 'Open-sans';
       font-size: 18px;
       font-weight: 400;
@@ -187,9 +148,9 @@
       background-color: rgba(0, 0, 0, 0);
       border: none;
       border-bottom: 1px solid rgba(255, 255, 255, 0.85);
-      text-indent: 5px;
       caret-color: $hover;
       outline: none;
+      transition: border-bottom .2s ease;
 
       &:hover {
         border-bottom: 1px solid $active;
@@ -200,6 +161,7 @@
       width: 22px;
       height: 22px;
       display: block;
+      margin-top: 5px;
       margin-right: 9px;
       background-color: rgba(0, 0, 0, 0);
       border: none;
@@ -208,6 +170,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       cursor: pointer;
+      transition: background-image .2s ease;
 
       &_header {
         display: none;
@@ -216,17 +179,24 @@
       &:hover {
         background-image: url('../icons/seacrhActive.svg');
       }
+
+      &:focus {
+        outline: 2px solid $active;
+      }
     }
+
   }
 
   &-body {
-    width: 37%;
+    width: 600px;
+
 
     &__title {
       color: $white;
       font-size: 72px;
       font-weight: 700;
-      line-height: 89px;
+      line-height: 84px;
+      margin-bottom: 0;
     }
 
     &__text {
@@ -234,8 +204,8 @@
       font-weight: 700;
       font-size: 18px;
       line-height: 30px;
-      margin-top: 13px;
-      margin-left: 5px;
+      margin-top: 17px;
+      margin-left: 2px;
     }
 
     &__btn {
@@ -266,6 +236,23 @@
   }
 }
 
+
+.simplebar-track.simplebar-vertical {
+  top: 40px;
+  right: 19px;
+  height: 220px;
+  width: 2px;
+  background-color: $main;
+}
+
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0;
+}
 
 @media (max-width: 1920px) {
 
@@ -311,10 +298,6 @@
 
     &-body {
       width: 61%;
-    }
-
-    &-wrapper-focus:not(:last-child) {
-      margin-right: 60px;
     }
 
     &-search {
@@ -374,7 +357,7 @@
 
       &__title {
         width: 563px;
-        line-height: 86px;
+        line-height: 84px;
       }
 
       &__text {
@@ -404,6 +387,7 @@
     &-search {
       &__button {
         &_header {
+          margin-top: 0;
           width: 16px;
           height: 16px;
         }

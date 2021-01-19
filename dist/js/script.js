@@ -1,10 +1,12 @@
 
 function createSelect(selector, {
   classNameWrap = 'select-wrap', classNameHeader = 'select-header', classNameHeaderIntro = 'select-header__selectable', classNameDropDown = 'select__dropdown', classNameItem = 'select__item',
-}) {
+  isChoice = true }) {
 
   const winodwWidth = document.documentElement.clientWidth;
   let eventType = 'click'
+
+  let selectId = Math.ceil(Date.now() * Math.random());
 
 
   if (winodwWidth < 555) {
@@ -19,7 +21,7 @@ function createSelect(selector, {
     optionArr.push(`<div class=${classNameItem}>${deleteOpt[i].value}</div>`)
   }
 
-  let selectStr = `<div class=${classNameWrap}>
+  let selectStr = `<div class=${classNameWrap} id=${selectId}>
   <div class=${classNameHeader} "sel" >
     <div class=${classNameHeaderIntro}>${deleteOpt[0].value}</div>
   </div>
@@ -31,8 +33,7 @@ function createSelect(selector, {
 
   selector.insertAdjacentHTML('beforebegin', selectStr)
 
-  const wrap = document.querySelector(`.${classNameWrap}`)
-
+  const wrap = document.getElementById(`${selectId}`)
   const dropdown = wrap.querySelector(`.${classNameDropDown}`)
   const selectItem = wrap.querySelectorAll(`.${classNameItem}`)
   const selectable = wrap.querySelector(`.${classNameHeaderIntro}`)
@@ -43,25 +44,30 @@ function createSelect(selector, {
     dropdown.classList.toggle('hide')
   })
 
-  selectItem.forEach(item => {
-    if (item.textContent === selectable.textContent) {
-      item.classList.add('hide')
-    }
-  })
+  if (isChoice) {
+    selectItem.forEach(item => {
+      if (item.textContent === selectable.textContent) {
+        item.classList.add('hide')
+      }
+    })
 
-  selectItem.forEach(item => {
-    item.addEventListener(eventType, (event) => {
-      selectable.textContent = event.target.textContent
-      dropdown.classList.toggle('hide')
-      selectItem.forEach(item => {
-        if (item === event.target) {
-          item.classList.add('hide')
-        } else {
-          item.classList.remove('hide')
-        }
+    selectItem.forEach(item => {
+      item.addEventListener(eventType, (event) => {
+        selectable.textContent = event.target.textContent
+        dropdown.classList.toggle('hide')
+        selectItem.forEach(item => {
+          if (item === event.target) {
+            item.classList.add('hide')
+          } else {
+            item.classList.remove('hide')
+          }
+        })
       })
     })
-  })
+  }
+
+
+
 
 
   document.body.addEventListener(eventType, (event) => {
@@ -79,39 +85,7 @@ function createSelect(selector, {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  const elements = document.querySelectorAll('.js-choice');
   const galerySelect = document.querySelector('.galery-list')
-
-  const seletConfig = {
-    shouldSort: false,
-    searchEnabled: false,
-    removeItemButton: false,
-    itemSelectText: "",
-    position: "bottom",
-  }
-
-  elements.forEach((item => {
-    return new Choices(item, seletConfig)
-  }))
-
-
-  const options = Array.from(document.querySelectorAll('.choices__item--choice')).filter(item => {
-    if (!(item.classList.contains('choices__item--disabled'))) {
-      return item
-    }
-  })
-
-  options.forEach((item, index) => {
-    item.style.backgroundImage = `url('../img/option${index}.jpg')`
-  })
-
-  Array.prototype.forEach.call(
-    document.querySelectorAll('.choices__list--dropdown'),
-    el => {
-      console.log(el)
-      return new SimpleBar(el)
-    }
-  );
 
   createSelect(galerySelect, {})
 
@@ -165,4 +139,39 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   })
 
+
+  const heroLists = document.querySelectorAll('.hero-list__header')
+  const dropdowns = document.querySelectorAll('.hero-dropdown')
+
+  heroLists.forEach(item => {
+    item.addEventListener('click', () => {
+      let dropdown = item.nextSibling
+      let arrow = item.querySelector('.hero-list__arrow')
+      dropdown.classList.toggle('hide')
+      if (dropdown.classList.contains('hide')) {
+        arrow.style.backgroundImage = "url('../icons/downArrow.svg')"
+        item.style.color = "#fff"
+      } else {
+        arrow.style.backgroundImage = "url('../icons/upArrow.svg')"
+        item.style.color = "#7943A4"
+      }
+      dropdowns.forEach(el => {
+        if (el !== dropdown) {
+          el.classList.add('hide')
+          el.previousSibling.style.color = "#fff"
+          el.previousSibling.querySelector('.hero-list__arrow').style.backgroundImage = "url('../icons/downArrow.svg')"
+        }
+      })
+    })
+  })
+
+
+  Array.prototype.forEach.call(
+    document.querySelectorAll('.hero-dropdown'),
+    el => new SimpleBar(el)
+  );
+
+
 })
+
+

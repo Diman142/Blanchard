@@ -1,6 +1,6 @@
 .galery {
   min-height: 995px;
-  padding-top: 80px;
+  padding-top: 84px;
   padding-bottom: 70px;
   background-image: url('../img/galery_bg.jpg');
   background-position: center;
@@ -32,7 +32,7 @@
   }
 
   &__note {
-    margin-top: 26px;
+    margin-top: 21px;
     color: $white;
     font-weight: 600;
     font-size: 16px;
@@ -43,7 +43,7 @@
     }
 
     &_mbb {
-      margin-bottom: -10px;
+      margin-bottom: -6px;
     }
 
     &_second {
@@ -54,6 +54,8 @@
   &__link {
     color: $hover;
     cursor: pointer;
+    transition: all .2s ease;
+
 
     &:hover {
       color: $main;
@@ -92,7 +94,7 @@
 
   &-arrows {
     position: absolute;
-    top: -30px;
+    top: -35px;
     left: 0;
     display: flex;
   }
@@ -106,6 +108,8 @@
     background-position: center;
     border-radius: 100%;
     outline: none;
+    transition: background-color .2s ease;
+    cursor: pointer;
 
     &:hover {
       background-color: $main;
@@ -167,7 +171,7 @@
 }
 
 
-@media (max-width: 1440px) {
+@media (max-width: 1340px) {
   .galery {
     min-height: 840px;
     padding-top: 85px;
@@ -179,8 +183,8 @@
       }
 
       &-right {
-        height: 620px;
-        width: 780px;
+        height: 618px;
+        width: 700px;
       }
     }
 
@@ -205,22 +209,28 @@
       }
     }
 
+    .user-slide-img {
+      width: 280px;
+      height: 280px;
+    }
+
   }
 
-  .user-slide-img {
-    width: 280px;
-    height: 280px;
-  }
+
 }
 
 
 @media(max-width: 1000px) {
   .galery {
+
+    padding-bottom: 53px;
+
     &-wrapper {
       flex-direction: column;
 
       &-left {
-        position: absolute;
+        width: 290px;
+        margin: 0 auto;
       }
 
       &-right {
@@ -238,12 +248,12 @@
       margin-top: 28px;
       display: block;
     }
-  }
 
-  .user-slide {
-    &-img {
-      width: 317px;
-      height: 280px;
+    .user-slide {
+      &-img {
+        width: 317px;
+        height: 280px;
+      }
     }
   }
 
@@ -299,14 +309,14 @@
     }
 
     &__note {
-      margin-top: 15px;
+      margin-top: 14px;
 
       &_mbh {
-        margin-bottom: 5px;
+        margin-bottom: 3px;
       }
 
       &_second {
-        margin-top: 70px;
+        margin-top: 68px;
       }
     }
 
@@ -323,12 +333,12 @@
         margin-right: 15px;
       }
     }
-  }
 
-  .user-slide {
-    &-img {
-      width: 290px;
-      height: 367px;
+    .user-slide {
+      &-img {
+        width: 290px;
+        height: 367px;
+      }
     }
   }
 

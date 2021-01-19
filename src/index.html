@@ -11,120 +11,95 @@
 
 <body>
   <header class="header">
-    <div class="burger">
-      <div class="burger-line burger-line__first"></div>
-      <div class="burger-line burger-line__second"></div>
-      <div class="burger-line burger-line__third"></div>
+    <div class="container container-header">
+      <div class="burger">
+        <div class="burger-line burger-line__first"></div>
+        <div class="burger-line burger-line__second"></div>
+        <div class="burger-line burger-line__third"></div>
+      </div>
+      <a href="#" class="header__logo"><img class="header__img" src="./img/logo.png" alt="Logo"></a>
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__item"><a class="header-nav__link" href="#">О нас</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Галерея</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Каталог</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">События</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Издания</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Проекты</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="header-sign" tabindex="0">
+        Войти
+      </a>
+      <button type="submit" class="hero-search__button hero-search__button_header"></button>
     </div>
-    <a href="#" class="header__logo"><img class="header__img" src="./img/logo.png" alt="Logo"></a>
-    <nav class="header-nav">
-      <ul class="header-nav__list">
-        <li class="header-nav__item" tabindex="0"><a class="header-nav__link">О нас</a></li>
-        <li class="header-nav__item" tabindex="0"><a class="header-nav__link">Галерея</a></li>
-        <li class="header-nav__item" tabindex="0"><a class="header-nav__link">Каталог</a></li>
-        <li class="header-nav__item" tabindex="0"><a class="header-nav__link">События</a></li>
-        <li class="header-nav__item" tabindex="0"><a class="header-nav__link">Издания</a></li>
-        <li class="header-nav__item" tabindex="0"><a class="header-nav__link">Проекты</a></li>
-        <li class="header-nav__item" tabindex="0"><a class="header-nav__link">Контакты</a></li>
-      </ul>
-    </nav>
-    <a class="header-sign" tabindex="0">
-      Войти
-    </a>
-    <button type="submit" class="hero-search__button hero-search__button_header"></button>
   </header>
   <main>
     <section class="hero">
       <div class="hero-header">
-        <div class="hero-wrapper">
-          <div class="hero-wrapper-focus" tabindex="0">
-            <select class="hero-list js-choice" onchange="window.location.href=this.options[this.selectedIndex].value">
-              <option class="hero-list__item" selected value="#" disabled> Реализм </option>
-              <option class="hero-list__item hero-list__item_bg1"
-                value="https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D0%BD%D1%82%D0%BE%D1%80%D0%B5%D1%82%D1%82%D0%BE">
-                Тинторетто</option>
-              <option class="hero-list__item hero-list__item_bg2"
-                value="https://ru.wikipedia.org/wiki/%D0%A4%D1%80%D0%B8%D0%B4%D1%80%D0%B8%D1%85,_%D0%9A%D0%B0%D1%81%D0%BF%D0%B0%D1%80_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4">
-                Фридрих</option>
-              <option class="hero-list__item hero-list__item_bg3"
-                value="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwyUk3M2D0Uriw-8LWC_su7L2w4WLDhS0X9ikAiQ0KFzZd2HFh78X2CzsA8CYZrw&q=%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0%D1%80%D0%B4%D0%BE+%D0%B4%D0%B0+%D0%B2%D0%B8%D0%BD%D1%87%D0%B8&oq=%D0%9B%D0%B5%D0%BE%D0%BD%D0%B0&aqs=chrome.1.69i57j46i433j0j0i433j0j46i433j0.1890j0j7&sourceid=chrome&ie=UTF-8">
-                Леонардо</option>
-              <option class="hero-list__item hero-list__item_bg4"
-                value="https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B0_%D0%92%D0%B5%D1%80%D1%80%D0%BE%D0%BA%D0%BA%D1%8C%D0%BE">
-                Верроккьо</option>
-              <option class="hero-list__item hero-list__item_bg5"
-                value="https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BD%D0%B5,_%D0%AD%D0%B4%D1%83%D0%B0%D1%80%D0%B4">
-                Мане</option>
-            </select>
-          </div>
-          <div class="hero-wrapper-focus" tabindex="0">
-            <select class="hero-list js-choice" onchange="window.location.href=this.options[this.selectedIndex].value">
-              <option class="hero-list__item" selected value="#" disabled>Импрессионизм </option>
-              <option class="hero-list__item hero-list__item_bg1"
-                value="https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D0%BD%D1%82%D0%BE%D1%80%D0%B5%D1%82%D1%82%D0%BE">
-                Тинторетто</option>
-              <option class="hero-list__item hero-list__item_bg2"
-                value="https://ru.wikipedia.org/wiki/%D0%A4%D1%80%D0%B8%D0%B4%D1%80%D0%B8%D1%85,_%D0%9A%D0%B0%D1%81%D0%BF%D0%B0%D1%80_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4">
-                Фридрих</option>
-              <option class="hero-list__item hero-list__item_bg3"
-                value="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwyUk3M2D0Uriw-8LWC_su7L2w4WLDhS0X9ikAiQ0KFzZd2HFh78X2CzsA8CYZrw&q=%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0%D1%80%D0%B4%D0%BE+%D0%B4%D0%B0+%D0%B2%D0%B8%D0%BD%D1%87%D0%B8&oq=%D0%9B%D0%B5%D0%BE%D0%BD%D0%B0&aqs=chrome.1.69i57j46i433j0j0i433j0j46i433j0.1890j0j7&sourceid=chrome&ie=UTF-8">
-                Леонардо</option>
-              <option class="hero-list__item hero-list__item_bg4"
-                value="https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B0_%D0%92%D0%B5%D1%80%D1%80%D0%BE%D0%BA%D0%BA%D1%8C%D0%BE">
-                Верроккьо</option>
-              <option class="hero-list__item hero-list__item_bg5"
-                value="https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BD%D0%B5,_%D0%AD%D0%B4%D1%83%D0%B0%D1%80%D0%B4">
-                Мане</option>
-            </select>
-          </div>
+        <div class="container container-herotop">
+          <div class="hero-wrapper">
+            <div class="hero-list">
+              <div class="hero-list__header">Реализм <span class="hero-list__arrow"></span> </div>
 
-          <div class="hero-wrapper-focus" tabindex="0">
-            <select class="hero-list js-choice" onchange="window.location.href=this.options[this.selectedIndex].value">
-              <option class="hero-list__item" selected value="#" disabled>Постимпрессионизм </option>
-              <option class="hero-list__item hero-list__item_bg1"
-                value="https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D0%BD%D1%82%D0%BE%D1%80%D0%B5%D1%82%D1%82%D0%BE">
-                Тинторетто</option>
-            </select>
-          </div>
+              <ul class="hero-dropdown hide">
+                <li class="hero-dropdown__item hero-dropdown__item-bg1">Тринторетто</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg2">Фридрих</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg3">Леонардо</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg4">Веррокьо</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg5">Рафаэль</li>
+              </ul>
+            </div>
 
-          <div class="hero-wrapper-focus" tabindex="0">
-            <select class="hero-list js-choice" onchange="window.location.href=this.options[this.selectedIndex].value">
-              <option class="hero-list__item" selected value="#" disabled>Авангард </option>
-              <option class="hero-list__item hero-list__item_bg1"
-                value="https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D0%BD%D1%82%D0%BE%D1%80%D0%B5%D1%82%D1%82%D0%BE">
-                Тинторетто</option>
-              <option class="hero-list__item hero-list__item_bg2"
-                value="https://ru.wikipedia.org/wiki/%D0%A4%D1%80%D0%B8%D0%B4%D1%80%D0%B8%D1%85,_%D0%9A%D0%B0%D1%81%D0%BF%D0%B0%D1%80_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4">
-                Фридрих</option>
-              <option class="hero-list__item hero-list__item_bg3"
-                value="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwyUk3M2D0Uriw-8LWC_su7L2w4WLDhS0X9ikAiQ0KFzZd2HFh78X2CzsA8CYZrw&q=%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0%D1%80%D0%B4%D0%BE+%D0%B4%D0%B0+%D0%B2%D0%B8%D0%BD%D1%87%D0%B8&oq=%D0%9B%D0%B5%D0%BE%D0%BD%D0%B0&aqs=chrome.1.69i57j46i433j0j0i433j0j46i433j0.1890j0j7&sourceid=chrome&ie=UTF-8">
-                Леонардо</option>
-            </select>
-          </div>
+            <div class="hero-list">
+              <div class="hero-list__header">Импрессионизм <span class="hero-list__arrow"></span> </div>
+              <ul class="hero-dropdown hide">
+                <li class="hero-dropdown__item hero-dropdown__item-bg1">Тринторетто</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg2">Фридрих</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg3">Леонардо</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg4">Веррокьо</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg5">Рафаэль</li>
+              </ul>
+            </div>
 
-          <div class="hero-wrapper-focus" tabindex="0">
-            <select class="hero-list js-choice" onchange="window.location.href=this.options[this.selectedIndex].value">
-              <option class="hero-list__item" selected value="#" disabled>Футуризм</option>
-              <option class="hero-list__item hero-list__item_bg1"
-                value="https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D0%BD%D1%82%D0%BE%D1%80%D0%B5%D1%82%D1%82%D0%BE">
-                Тинторетто</option>
-              <option class="hero-list__item hero-list__item_bg2"
-                value="https://ru.wikipedia.org/wiki/%D0%A4%D1%80%D0%B8%D0%B4%D1%80%D0%B8%D1%85,_%D0%9A%D0%B0%D1%81%D0%BF%D0%B0%D1%80_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4">
-                Фридрих</option>
-              <option class="hero-list__item hero-list__item_bg3"
-                value="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwyUk3M2D0Uriw-8LWC_su7L2w4WLDhS0X9ikAiQ0KFzZd2HFh78X2CzsA8CYZrw&q=%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0%D1%80%D0%B4%D0%BE+%D0%B4%D0%B0+%D0%B2%D0%B8%D0%BD%D1%87%D0%B8&oq=%D0%9B%D0%B5%D0%BE%D0%BD%D0%B0&aqs=chrome.1.69i57j46i433j0j0i433j0j46i433j0.1890j0j7&sourceid=chrome&ie=UTF-8">
-                Леонардо</option>
-              <option class="hero-list__item hero-list__item_bg5"
-                value="https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BD%D0%B5,_%D0%AD%D0%B4%D1%83%D0%B0%D1%80%D0%B4">
-                Мане</option>
-            </select>
-          </div>
+            <div class="hero-list">
+              <div class="hero-list__header">Постимпрессионизм <span class="hero-list__arrow"></span> </div>
+              <ul class="hero-dropdown hide">
+                <li class="hero-dropdown__item hero-dropdown__item-bg1">Тринторетто</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg2">Фридрих</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg3">Леонардо</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg4">Веррокьо</li>
+              </ul>
+            </div>
 
+            <div class="hero-list">
+              <div class="hero-list__header ">Авангард <span class="hero-list__arrow"></span> </div>
+              <ul class="hero-dropdown hide">
+                <li class="hero-dropdown__item hero-dropdown__item-bg1">Тринторетто</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg2">Фридрих</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg3">Леонардо</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg4">Веррокьо</li>
+              </ul>
+            </div>
+
+            <div class="hero-list">
+              <div class="hero-list__header ">Футуризм <span class="hero-list__arrow"></span></div>
+
+              <ul class="hero-dropdown hide">
+                <li class="hero-dropdown__item hero-dropdown__item-bg1">Тринторетто</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg2">Фридрих</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg3">Леонардо</li>
+                <li class="hero-dropdown__item hero-dropdown__item-bg4">Веррокьо</li>
+
+              </ul>
+            </div>
+          </div>
+          <form action="#" class="hero-search" tabindex="0">
+            <button type="submit" class="hero-search__button"></button>
+            <input type="search" class="hero-search__field" placeholder="Поиск по сайту">
+          </form>
         </div>
-        <form action="#" class="hero-search" tabindex="0">
-          <button type="submit" class="hero-search__button"></button>
-          <input type="search" class="hero-search__field">
-        </form>
       </div>
       <div class="container container-hero">
         <div class="hero-body">
@@ -244,10 +219,50 @@
             <a class="galery__link">авторизуйтесь</a>, либо воспользуйтесь лицензией.</p>
         </div>
       </div>
-
-
     </section>
 
+    <!-- <section class="catalog">
+      <div class="container container-catalog">
+        <div class="catalog-header">
+          <h2 class="title">Каталог</h2>
+          <div class="catalog__flag"></div>
+          <div class="catalog__flag"></div>
+          <div class="catalog__flag"></div>
+          <div class="catalog__flag"></div>
+          <div class="catalog__flag"></div>
+        </div>
+
+        <p class="text text_catalog">Акционеры крупнейших компаний, которые представляют собой яркий пример
+          континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы
+          этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство,
+          нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на
+          независимые элементы. </p>
+
+        <div class="catalog-main">
+          <ul class="catalog-cards">
+            <li class="catalog-cards_item"></li>
+            <li class="catalog-cards_item"></li>
+            <li class="catalog-cards_item"></li>
+            <li class="catalog-cards_item"></li>
+            <li class="catalog-cards_item"></li>
+          </ul>
+          <ul class="catalog-accordion">
+            <div class="asking-wrapper asking-padding">
+              <p class="asking-text">Из чего формируется конечная стоимость проекта?</p>
+              <button class="asking-plus" aria-label="Развернуть"></button>
+            </div>
+            <ul class="catalog-list">
+              <li class="catalog-list__item">Бенедетто ди Биндо</li>
+              <li class="catalog-list__item">Джованни Бонсиньори</li>
+              <li class="catalog-list__item">Веккьетта</li>
+              <li class="catalog-list__item"></li>
+              <li class="catalog-list__item"></li>
+              <li class="catalog-list__item"></li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </section> -->
 
 
   </main>

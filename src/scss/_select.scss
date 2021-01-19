@@ -74,3 +74,12 @@
     }
   }
 }
+
+@media(max-width: 540px) {
+  .select {
+    &-wrap {
+      width: 290px;
+      margin-right: 0;
+    }
+  }
+}
