@@ -1741,6 +1741,7 @@ html .ui-button.ui-state-disabled:active {
     border-top: 1px solid #CACACA; }
 
 .ui-accordion .ui-accordion-header {
+  position: relative;
   padding: 0; }
 
 .ui-widget-content {
@@ -1764,7 +1765,8 @@ html .ui-button.ui-state-disabled:active {
   position: absolute;
   background-image: url("../icons/arrowDown.svg");
   background-size: 18px 12px;
-  background-position: center; }
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .ui-widget input,
 .ui-widget select,

@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   heroLists.forEach(item => {
     item.addEventListener('click', () => {
-      let dropdown = item.nextSibling
+      let dropdown = item.nextElementSibling
       let arrow = item.querySelector('.hero-list__arrow')
       dropdown.classList.toggle('hide')
       if (dropdown.classList.contains('hide')) {
@@ -319,10 +319,10 @@ document.addEventListener('DOMContentLoaded', () => {
       dropdowns.forEach(el => {
         if (el !== dropdown) {
           el.classList.add('hide')
-          el.previousSibling.classList.remove('activecolor')
-          el.previousSibling.classList.add('whitecolor')
-          el.previousSibling.querySelector('.hero-list__arrow').classList.remove('uparrowbg')
-          el.previousSibling.querySelector('.hero-list__arrow').classList.add('downarrowbg')
+          el.previousElementSibling.classList.remove('activecolor')
+          el.previousElementSibling.classList.add('whitecolor')
+          el.previousElementSibling.querySelector('.hero-list__arrow').classList.remove('uparrowbg')
+          el.previousElementSibling.querySelector('.hero-list__arrow').classList.add('downarrowbg')
         }
       })
     })
