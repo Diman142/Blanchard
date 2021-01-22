@@ -35,6 +35,9 @@ body {
   font-family: 'Open-sans', sans-serif;
 }
 
+li {
+  list-style: none;
+}
 
 .container {
   max-width: 1900px;
@@ -45,33 +48,41 @@ body {
   &-header {
     display: flex;
     align-items: center;
-    padding-right: 145px;
+    padding-right: 140px;
+    padding-left: 158px;
   }
 
   &-hero {
-    padding-left: 151px;
+    padding-left: 154px;
     padding-top: 20px;
   }
 
   &-herotop {
     padding-top: 0;
-    padding-left: 152px;
-    padding-right: 147px;
+    padding-left: 157px;
+    padding-right: 143px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   &-about {
-    padding-left: 153px;
+    padding-left: 157px;
   }
 
   &-galery {
-    padding-left: 153px;
+    padding-right: 140px;
+    padding-left: 157px;
+  }
+
+  &-catalog {
+    padding-right: 143px;
+    padding-left: 156px;
   }
 }
 
 .swiper-container {
+  width: 100%;
   padding-top: 25px;
 }
 
@@ -97,7 +108,25 @@ body {
     margin-top: 22px;
     padding-right: 500px;
   }
+
+  &_catalog {
+    width: 1080px;
+    margin-top: 9px;
+    margin-left: 3px;
+    margin-bottom: 37px;
+  }
+
+  &_painter {
+    margin-top: 7px;
+    margin-left: 3px;
+  }
 }
+
+.subtitle {
+  font-weight: 600;
+  font-size: 24px;
+}
+
 
 @media (max-width: 1690px) {
   .text {

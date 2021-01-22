@@ -40,13 +40,12 @@
     flex-direction: column;
     cursor: pointer;
 
-    &:not(:first-child) {
-      margin-left: 92px;
+    &:not(:last-child) {
+      margin-right: 92px;
     }
 
     &__header {
       font-size: 18px;
-      color: #fff;
       font-weight: 400;
       transition: color .2s ease;
 
@@ -59,27 +58,14 @@
       display: inline-block;
       width: 16px;
       height: 9px;
-      background-image: url('../icons/downArrow.svg');
       background-repeat: no-repeat;
       background-position: center;
-
-    }
-
-    &:hover {
-      .hero-list__header {
-        color: $hover;
-      }
-
-      .hero-list__arrow {
-        background-image: url('../icons/downArrowHover.svg');
-
-      }
     }
   }
 
   &-dropdown {
     position: absolute;
-    top: 43px;
+    top: 30px;
     width: 300px;
     height: 300px;
     padding: 40px;
@@ -88,6 +74,7 @@
 
 
     &__item {
+      position: relative;
       width: 220px;
       height: 40px;
       padding-top: 9px;
@@ -104,6 +91,27 @@
 
       &:not(:last-child) {
         margin-bottom: 20px;
+      }
+
+      &:hover {
+        outline: 2px solid $main;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(194, 131, 243, 0.4);
+        opacity: 0;
+      }
+
+      &:active {
+        &::before {
+          opacity: 1;
+        }
       }
 
       &-bg1 {
@@ -196,6 +204,7 @@
       font-size: 72px;
       font-weight: 700;
       line-height: 84px;
+      margin-top: 50px;
       margin-bottom: 0;
     }
 
@@ -205,7 +214,7 @@
       font-size: 18px;
       line-height: 30px;
       margin-top: 17px;
-      margin-left: 2px;
+      margin-left: 5px;
     }
 
     &__btn {
@@ -424,6 +433,30 @@
         font-size: 12px;
 
       }
+    }
+  }
+}
+
+.downarrowbg {
+  background-image: url('../icons/downArrow.svg');
+}
+
+.uparrowbg {
+  background-image: url('../icons/upArrow.svg');
+}
+
+.activecolor {
+  color: $active;
+}
+
+.whitecolor {
+  color: $white;
+
+  &:hover {
+    color: $hover;
+
+    .downarrowbg {
+      background-image: url('../icons/downArrowHover.svg');
     }
   }
 }

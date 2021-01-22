@@ -5,18 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Blanchard</title>
 </head>
 
 <body>
   <header class="header">
-    <div class="container container-header">
-      <div class="burger">
+    <div class="container container-header"><button class="burger">
         <div class="burger-line burger-line__first"></div>
         <div class="burger-line burger-line__second"></div>
         <div class="burger-line burger-line__third"></div>
-      </div><a href="#" class="header__logo"><img class="header__img" src="./img/logo.png" alt="Logo"></a>
+      </button> <a href="#" class="header__logo"><img class="header__img" src="./img/logo.png" alt="Logo"></a>
       <nav class="header-nav">
         <ul class="header-nav__list">
           <li class="header-nav__item"><a class="header-nav__link" href="#">О нас</a></li>
@@ -37,7 +37,7 @@
         <div class="container container-herotop">
           <div class="hero-wrapper">
             <div class="hero-list">
-              <div class="hero-list__header">Реализм <span class="hero-list__arrow"></span></div>
+              <div class="hero-list__header whitecolor">Реализм <span class="hero-list__arrow downarrowbg"></span></div>
               <ul class="hero-dropdown hide">
                 <li class="hero-dropdown__item hero-dropdown__item-bg1">Тринторетто</li>
                 <li class="hero-dropdown__item hero-dropdown__item-bg2">Фридрих</li>
@@ -47,7 +47,8 @@
               </ul>
             </div>
             <div class="hero-list">
-              <div class="hero-list__header">Импрессионизм <span class="hero-list__arrow"></span></div>
+              <div class="hero-list__header whitecolor">Импрессионизм <span class="hero-list__arrow downarrowbg"></span>
+              </div>
               <ul class="hero-dropdown hide">
                 <li class="hero-dropdown__item hero-dropdown__item-bg1">Тринторетто</li>
                 <li class="hero-dropdown__item hero-dropdown__item-bg2">Фридрих</li>
@@ -57,7 +58,8 @@
               </ul>
             </div>
             <div class="hero-list">
-              <div class="hero-list__header">Постимпрессионизм <span class="hero-list__arrow"></span></div>
+              <div class="hero-list__header whitecolor">Постимпрессионизм <span
+                  class="hero-list__arrow downarrowbg"></span></div>
               <ul class="hero-dropdown hide">
                 <li class="hero-dropdown__item hero-dropdown__item-bg1">Тринторетто</li>
                 <li class="hero-dropdown__item hero-dropdown__item-bg2">Фридрих</li>
@@ -66,7 +68,8 @@
               </ul>
             </div>
             <div class="hero-list">
-              <div class="hero-list__header">Авангард <span class="hero-list__arrow"></span></div>
+              <div class="hero-list__header whitecolor">Авангард <span class="hero-list__arrow downarrowbg"></span>
+              </div>
               <ul class="hero-dropdown hide">
                 <li class="hero-dropdown__item hero-dropdown__item-bg1">Тринторетто</li>
                 <li class="hero-dropdown__item hero-dropdown__item-bg2">Фридрих</li>
@@ -75,7 +78,8 @@
               </ul>
             </div>
             <div class="hero-list">
-              <div class="hero-list__header">Футуризм <span class="hero-list__arrow"></span></div>
+              <div class="hero-list__header whitecolor">Футуризм <span class="hero-list__arrow downarrowbg"></span>
+              </div>
               <ul class="hero-dropdown hide">
                 <li class="hero-dropdown__item hero-dropdown__item-bg1">Тринторетто</li>
                 <li class="hero-dropdown__item hero-dropdown__item-bg2">Фридрих</li>
@@ -90,7 +94,7 @@
       </div>
       <div class="container container-hero">
         <div class="hero-body">
-          <h1 class="hero-body__title">Прикоснитеcь к прекрасному</h1>
+          <h2 class="hero-body__title">Прикоснитеcь к прекрасному</h2>
           <p class="hero-body__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий
             создаёт предпосылки для новых предложений.</p><button type="button" class="hero-body__btn">Подписаться на
             рассылку</button>
@@ -198,51 +202,1456 @@
         </div>
       </div>
     </section>
-    <!-- <section class="catalog">
+    <section class="catalog">
       <div class="container container-catalog">
         <div class="catalog-header">
           <h2 class="title">Каталог</h2>
-          <div class="catalog__flag"></div>
-          <div class="catalog__flag"></div>
-          <div class="catalog__flag"></div>
-          <div class="catalog__flag"></div>
-          <div class="catalog__flag"></div>
+          <div class="catalog-flagwrap"><button class="catalog-header__flag catalog-header__flag_fr" id="france"><img
+                src="./icons/france.svg" class="catalog-header__img" alt="france"></button> <button
+              class="catalog-header__flag catalog-header__flag_dt" id="deutch"><img src="./icons/deutch.svg"
+                class="catalog-header__img" alt="deutch"></button> <button
+              class="catalog-header__flag catalog-header__flag_it" id="italy"><img src="./icons/italy.svg"
+                class="catalog-header__img" alt="italy"></button> <button
+              class="catalog-header__flag catalog-header__flag_ru catalog-header__flag_active" id="russia"><img
+                src="icons/russia.svg" class="catalog-header__img" alt="russia"></button> <button
+              class="catalog-header__flag catalog-header__flag_bl" id="belgium"><img src="icons/belgium.svg"
+                class="catalog-header__img" alt="belgium"></button></div>
         </div>
-
-        <p class="text text_catalog">Акционеры крупнейших компаний, которые представляют собой яркий пример
-          континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы
-          этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство,
-          нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на
-          независимые элементы. </p>
-
-        <div class="catalog-main">
-          <ul class="catalog-cards">
-            <li class="catalog-cards_item"></li>
-            <li class="catalog-cards_item"></li>
-            <li class="catalog-cards_item"></li>
-            <li class="catalog-cards_item"></li>
-            <li class="catalog-cards_item"></li>
-          </ul>
-          <ul class="catalog-accordion">
-            <div class="asking-wrapper asking-padding">
-              <p class="asking-text">Из чего формируется конечная стоимость проекта?</p>
-              <button class="asking-plus" aria-label="Развернуть"></button>
+        <div class="catalog-tab" id="rus" data-country="russia">
+          <p class="text text_catalog">Акционеры крупнейших компаний, которые представляют собой яркий пример
+            континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы
+            этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство,
+            нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на
+            независимые элементы.</p>
+          <div class="catalog-main">
+            <div class="catalog-card"><img src="./img/catalog.jpg" alt="painter" class="catalog-card__img">
+              <h4 class="catalog__title subtitle">Доменико Гирландайо</h4>
+              <p class="catalog__date">2 июня 1448 — 11 января 1494</p>
+              <p class="text text_painter">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей
+                (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
             </div>
-            <ul class="catalog-list">
-              <li class="catalog-list__item">Бенедетто ди Биндо</li>
-              <li class="catalog-list__item">Джованни Бонсиньори</li>
-              <li class="catalog-list__item">Веккьетта</li>
-              <li class="catalog-list__item"></li>
-              <li class="catalog-list__item"></li>
-              <li class="catalog-list__item"></li>
-            </ul>
-          </ul>
+            <div class="catalog-accordion user-accordion">
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text" tabindex="0">C 1400 по 1499
+                    гг.</span> <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item catalog-list__item-active text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1500 по 1599 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1600 по 1699 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1700 по 1799 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1800 по 1899 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1900 по 1999 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 2000 г.</span> <button
+                    class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-tab hideopacity" id="dt" data-country="deutch">
+          <p class="text text_catalog">Aktionäre der größten Unternehmen, die ein Paradebeispiel sind Die
+            kontinentaleuropäische Art der politischen Kultur wird als Verstoß gegen universelle menschliche Normen
+            deklariert Ethik und Moral. Als Teil des Gesamtbildes, das versucht, die traditionelle Fertigung zu
+            verdrängen, Die Nanotechnologie ist bis heute das Los vieler Liberaler, die darauf aus sind, funktional
+            verteilt zu werden unabhängige Elemente.</p>
+          <div class="catalog-main">
+            <div class="catalog-card"><img src="./img/catalog.jpg" alt="painter" class="catalog-card__img">
+              <h4 class="catalog__title subtitle">Доменико Гирландайо</h4>
+              <p class="catalog__date">2 июня 1448 — 11 января 1494</p>
+              <p class="text text_painter">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей
+                (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-accordion user-accordion">
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text" tabindex="0">C 1400 по 1499
+                    гг.</span> <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1500 по 1599 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1600 по 1699 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1700 по 1799 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1800 по 1899 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1900 по 1999 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 2000 г.</span> <button
+                    class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-tab hideopacity" id="bl" data-country="belgium">
+          <p class="text text_catalog">Aandeelhouders van de grootste bedrijven die een goed voorbeeld zijn
+            continentaal-Europese politieke cultuur, zal worden verklaard in strijd met universele menselijke normen
+            ethiek en moraal. Als onderdeel van het grote geheel, waarbij we de traditionele productie willen
+            verdringen, nanotechnologie blijft tot op de dag van vandaag het lot van liberalen die graag functioneel
+            verspreid willen worden onafhankelijke elementen.</p>
+          <div class="catalog-main">
+            <div class="catalog-card"><img src="./img/catalog.jpg" alt="painter" class="catalog-card__img">
+              <h4 class="catalog__title subtitle">Доменико Гирландайо</h4>
+              <p class="catalog__date">2 июня 1448 — 11 января 1494</p>
+              <p class="text text_painter">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей
+                (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-accordion user-accordion">
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text" tabindex="0">C 1400 по 1499
+                    гг.</span> <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1500 по 1599 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1600 по 1699 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1700 по 1799 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1800 по 1899 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1900 по 1999 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 2000 г.</span> <button
+                    class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-tab hideopacity" id="fr" data-country="france">
+          <p class="text text_catalog">Actionnaires des plus grandes entreprises qui en sont un excellent exemple
+            culture politique de type continental-européen, sera déclarée violant les normes humaines universelles
+            éthique et moralité. Dans le cadre de la vue d'ensemble, cherchant à remplacer la fabrication
+            traditionnelle, la nanotechnologie demeure à ce jour le lot des libéraux désireux d'être dispersés
+            fonctionnellement éléments indépendants.</p>
+          <div class="catalog-main">
+            <div class="catalog-card"><img src="./img/catalog.jpg" alt="painter" class="catalog-card__img">
+              <h4 class="catalog__title subtitle">Доменико Гирландайо</h4>
+              <p class="catalog__date">2 июня 1448 — 11 января 1494</p>
+              <p class="text text_painter">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей
+                (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-accordion user-accordion">
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text" tabindex="0">C 1400 по 1499
+                    гг.</span> <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1500 по 1599 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1600 по 1699 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1700 по 1799 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1800 по 1899 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1900 по 1999 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 2000 г.</span> <button
+                    class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-tab hideopacity" id="it" data-country="italy">
+          <p class="text text_catalog">Azionisti delle più grandi aziende che sono un ottimo esempio tipo di cultura
+            politica continentale-europea, sarà dichiarata violazione delle norme umane universali etica e moralità.
+            Come parte del quadro generale, cercando di sostituire la produzione tradizionale, la nanotecnologia fino ad
+            oggi rimane il destino dei liberali che vogliono essere funzionalmente elementi indipendenti.</p>
+          <div class="catalog-main">
+            <div class="catalog-card"><img src="./img/catalog.jpg" alt="painter" class="catalog-card__img">
+              <h4 class="catalog__title subtitle">Доменико Гирландайо</h4>
+              <p class="catalog__date">2 июня 1448 — 11 января 1494</p>
+              <p class="text text_painter">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей
+                (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-accordion user-accordion">
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text" tabindex="0">C 1400 по 1499
+                    гг.</span> <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1500 по 1599 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1600 по 1699 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1700 по 1799 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1800 по 1899 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 1900 по 1999 гг.</span>
+                  <button class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-accordion-top">
+                <div class="catalog-accordion-wrapper"><span class="catalog-accordion__text">C 2000 г.</span> <button
+                    class="catalog-accordion__btn"></button></div>
+              </div>
+              <div class="catalog-accordion-bottom">
+                <div class="catalog-lists">
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Бенедетто ди Биндо</li>
+                    <li class="catalog-list__item text">Бергоньоне, Амброджо</li>
+                    <li class="catalog-list__item text">Биссоло, Франческо</li>
+                    <li class="catalog-list__item text">Больтраффио, Джованни</li>
+                    <li class="catalog-list__item text">Бонсиньори, Франческо</li>
+                    <li class="catalog-list__item text">Боттичини, Рафаэлло</li>
+                    <li class="catalog-list__item text">Брамантино</li>
+                    <li class="catalog-list__item text">Бреа, Людовико</li>
+                    <li class="catalog-list__item text">Бьяджо д’Антонио Туччи</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Веккьетта</li>
+                    <li class="catalog-list__item text">Андреа, Верроккьо</li>
+                    <li class="catalog-list__item text">Доменико, Гирландайо</li>
+                    <li class="catalog-list__item text">Беноццо, Гоццоли</li>
+                    <li class="catalog-list__item text">Граначчи, Франческо</li>
+                    <li class="catalog-list__item text">Грегорио ди Чекко</li>
+                    <li class="catalog-list__item text">Джованни да Удине</li>
+                    <li class="catalog-list__item text">Джованни ди Паоло</li>
+                    <li class="catalog-list__item text">Джорджоне</li>
+                  </ul>
+                  <ul class="catalog-list">
+                    <li class="catalog-list__item text">Парентино, Бернардо</li>
+                    <li class="catalog-list__item text">Пезеллино</li>
+                    <li class="catalog-list__item text">Пьетро Перуджино</li>
+                    <li class="catalog-list__item text">Перуцци, Бальдассаре</li>
+                    <li class="catalog-list__item text">Пизанелло</li>
+                    <li class="catalog-list__item text">Пинтуриккьо</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section> -->
+    </section>
   </main>
   <footer></footer>
-  <script src="./js/choices.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="./js/swiper.min.js"></script>
   <script src="./js/script.js"></script>

@@ -1,7 +1,6 @@
 @import './variables';
 
 @import './normilize';
-@import './choices.min';
 @import './swiper.min';
 
 
@@ -11,8 +10,21 @@
 @import './about';
 @import './galery';
 @import './select';
+@import './catalog';
+@import './accordion';
 
 
 .hide {
   display: none;
+}
+
+.hideopacity {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.showopacity {
+  height: auto;
+  opacity: 1;
 }

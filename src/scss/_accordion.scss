@@ -1,0 +1,107 @@
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border: none;
+  border-bottom: 1px solid $main;
+  background: #fff;
+  color: #000;
+
+  &:first-child {
+    border-top: 1px solid $main;
+  }
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  border: none;
+  border-bottom: 1px solid #CACACA;
+  background: #fff;
+  outline: none;
+
+  &:first-child {
+    border-top: 1px solid #CACACA;
+  }
+}
+
+.ui-accordion .ui-accordion-header {
+  padding: 0;
+}
+
+
+.ui-widget-content {
+  border: none;
+
+  border-bottom: 1px solid #CACACA;
+
+  &:first-child {
+    border-top: 1px solid #CACACA;
+  }
+}
+
+
+.ui-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #ececec;
+  transition: background-color .2s ease;
+}
+
+.ui-icon,
+.ui-widget-content .ui-icon {
+  margin-top: 0;
+  top: 33px;
+  right: -2px;
+  position: absolute;
+  background-image: url('../icons/arrowDown.svg');
+  background-size: 18px 12px;
+  background-position: center;
+}
+
+
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  display: none;
+}
+
+.ui-accordion .ui-accordion-content {
+  padding-left: 3px;
+  padding-top: 10px;
+  padding-bottom: 13px;
+}
+
+
+.ui-button,
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+html .ui-button.ui-state-disabled:active,
+html .ui-button.ui-state-disabled:hover {
+  border: 0;
+  border-bottom: 1px solid #cacaca;
+  background: #fff;
+  outline: 0;
+}
+
+
+.ui-state-hover .ui-icon,
+.ui-button:hover .ui-icon {
+  background-image: url('../icons/arrowDownWhite.svg');
+  background-color: $main;
+}
+
+.ui-state-active .ui-icon,
+.ui-button:active .ui-icon {
+  background-image: url('../icons/arrowUp.svg');
+  border: 2px solid #D1A9F0;
+  background-color: $active;
+}

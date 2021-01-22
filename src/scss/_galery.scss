@@ -25,14 +25,14 @@
       display: flex;
       min-width: 0;
       width: 1200px;
-      height: 780px;
+      height: 770px;
       margin-left: 50px;
 
     }
   }
 
   &__note {
-    margin-top: 21px;
+    margin-top: 19px;
     color: $white;
     font-weight: 600;
     font-size: 16px;
@@ -43,7 +43,7 @@
     }
 
     &_mbb {
-      margin-bottom: -6px;
+      margin-bottom: -13px;
     }
 
     &_second {
@@ -66,18 +66,24 @@
       color: $active;
       border-bottom: 1px solid $active;
     }
+
+
   }
 
-  .user-slide-img {
-    height: 350px;
-    overflow: visible;
-  }
-
+  // .user-slide-img {
+  //   width: 350px;
+  //   height: 350px;
+  //   overflow: visible;
+  // }
 
   .swiper-slide {
-    height: calc((100% - 30px)/ 2);
+    height: calc((100% - 50px)/ 2);
+    overflow: visible;
+    // height: 350px;
+    // width: 350px;
 
   }
+
 
   .swiper-container-horizontal>.swiper-pagination-bullets,
   .swiper-pagination-custom,

@@ -7,6 +7,8 @@
   background-color: #000;
 
   &__logo {
+    margin-right: 171px;
+
     &:focus {
       border: none;
       outline: 2px solid $active;
@@ -21,7 +23,7 @@
   }
 
   &-nav {
-    margin-left: 169px;
+
 
     &__list {
       display: flex;
@@ -32,8 +34,8 @@
 
       padding: 2px 6px 8px 6px;
 
-      &:not(:first-child) {
-        margin-left: 51px;
+      &:not(:last-child) {
+        margin-right: 51px;
       }
 
     }
@@ -94,6 +96,8 @@
 .burger {
   display: none;
   cursor: pointer;
+  background-color: #000;
+  border: none;
 
   &-line {
     height: 3.65px;
@@ -119,6 +123,10 @@
       background-color: $hover;
     }
   }
+
+  &:focus {
+    outline: 2px solid $main;
+  }
 }
 
 
@@ -132,8 +140,8 @@
       }
 
       &__item {
-        &:not(:first-child) {
-          margin-left: 30px;
+        &:not(:last-child) {
+          margin-right: 30px;
         }
       }
     }
