@@ -79,6 +79,10 @@ li {
     padding-right: 143px;
     padding-left: 156px;
   }
+
+  &-event {
+    padding-right: 137px;
+  }
 }
 
 .swiper-container {
@@ -112,13 +116,13 @@ li {
   &_catalog {
     width: 1080px;
     margin-top: 9px;
-    margin-left: 3px;
-    margin-bottom: 37px;
+    margin-left: 0px;
+    margin-bottom: 39px;
   }
 
   &_painter {
+    line-height: 33px;
     margin-top: 7px;
-    margin-left: 3px;
   }
 }
 

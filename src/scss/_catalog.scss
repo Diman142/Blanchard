@@ -1,5 +1,5 @@
 .catalog {
-  padding-top: 80px;
+  padding-top: 84px;
   padding-bottom: 80px;
 
   &-tab {
@@ -71,14 +71,12 @@
 
   &__title {
     margin-top: 31px;
-    margin-bottom: 15px;
-    margin-left: 3px;
+    margin-bottom: 14px;
 
   }
 
   &__date {
     margin-bottom: 0;
-    margin-left: 3px;
     font-weight: 400;
     font-size: 12px;
     color: #999;
@@ -105,11 +103,12 @@
 
     &__text {
       display: inline-block;
-      margin-top: 38px;
+      margin-top: 39px;
       margin-bottom: 42px;
       font-weight: 600;
       font-size: 24px;
       transition: color .2s ease;
+
 
 
       &:focus {
