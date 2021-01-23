@@ -298,23 +298,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   const heroLists = document.querySelectorAll('.hero-list__header')
-  const dropdowns = document.querySelectorAll('.hero-dropdown')
+  const dropdowns = document.querySelectorAll('.hero-dropwrap')
+  let isOpen = false;
+  let headerdrop = null
+  let headerarrow = null
+  let dropheader = null
+
 
   heroLists.forEach(item => {
     item.addEventListener('click', () => {
       let dropdown = item.nextElementSibling
+      headerdrop = dropdown
       let arrow = item.querySelector('.hero-list__arrow')
+      headerarrow = arrow
+      dropheader = item
       dropdown.classList.toggle('hide')
       if (dropdown.classList.contains('hide')) {
         arrow.classList.remove('uparrowbg')
         arrow.classList.add('downarrowbg')
         item.classList.remove('activecolor')
         item.classList.add('whitecolor')
+        isOpen = false
       } else {
         arrow.classList.remove('downarrowbg')
         arrow.classList.add('uparrowbg')
         item.classList.remove('whitecolor')
         item.classList.add('activecolor')
+        isOpen = true
       }
       dropdowns.forEach(el => {
         if (el !== dropdown) {
@@ -326,6 +336,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       })
     })
+  })
+
+  console.log(isOpen)
+
+  document.body.addEventListener('click', (event) => {
+    if (isOpen && (!(event.target.classList.contains('hero-list__header') || event.target.classList.contains('hero-list') || event.target.classList.contains('hero-dropwrap') ||
+      event.target.classList.contains('hero-dropdown') || event.target.classList.contains('hero-dropdown__item') || event.target.classList.contains('hero-header') || event.target.classList.contains('simplebar-content')) && headerdrop)) {
+      headerdrop.classList.add('hide')
+      headerarrow.classList.remove('uparrowbg')
+      headerarrow.classList.add('downarrowbg')
+      dropheader.classList.remove('activecolor')
+      dropheader.classList.add('whitecolor')
+      isOpen = false;
+      console.log(event.target)
+    }
+  })
+
+
+  document.body.addEventListener('click', () => {
+    console.log(isOpen)
   })
 
 

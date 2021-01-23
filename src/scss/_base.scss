@@ -81,7 +81,8 @@ li {
   }
 
   &-event {
-    padding-right: 137px;
+    padding-left: 158px;
+    padding-right: 135px;
   }
 }
 
@@ -100,6 +101,16 @@ li {
   &_white {
     color: $white
   }
+
+  &__event {
+    margin-bottom: 23px;
+  }
+
+  &__main {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
 }
 
 .text {
@@ -107,28 +118,42 @@ li {
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
 
   &_about {
-    margin-top: 22px;
+    margin-top: 20px;
     padding-right: 500px;
+    line-height: 33px;
   }
 
   &_catalog {
     width: 1080px;
-    margin-top: 9px;
+    margin-top: 0px;
     margin-left: 0px;
     margin-bottom: 39px;
   }
 
   &_painter {
-    line-height: 33px;
-    margin-top: 7px;
+
+    margin-top: 0px;
+  }
+
+  &_event {
+    width: 400px;
+
   }
 }
 
 .subtitle {
   font-weight: 600;
   font-size: 24px;
+
+  &_event {
+    margin-bottom: 4px;
+    margin-top: 0px;
+    line-height: 32px;
+  }
 }
 
 

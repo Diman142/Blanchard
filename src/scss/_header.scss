@@ -1,8 +1,8 @@
 .header {
   position: relative;
   width: 100%;
-  min-height: 100px;
-  padding-top: 20px;
+  padding-top: 29px;
+  padding-bottom: 28px;
 
   background-color: #000;
 
@@ -25,9 +25,12 @@
   &-nav {
 
 
+
     &__list {
       display: flex;
       justify-content: space-between;
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
     &__item {
@@ -65,7 +68,6 @@
   }
 
   &-sign {
-    margin-top: -6px;
     margin-left: auto;
     color: $white;
     font-size: 18px;

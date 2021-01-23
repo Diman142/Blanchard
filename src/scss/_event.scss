@@ -5,6 +5,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 2px;
 
   }
 
@@ -12,9 +13,9 @@
     position: relative;
     flex-basis: 478px;
     flex-shrink: 0;
-    margin-right: 50px;
-    margin-bottom: 50px;
-    padding-bottom: 43px;
+    margin-right: 48px;
+    margin-bottom: 49px;
+    padding-bottom: 86px;
     border: 1px solid #CACACA;
 
     &:nth-child(3n+3) {
@@ -31,27 +32,52 @@
     }
 
     &__note {
-      margin-top: 10px;
+      margin-top: 0px;
+      margin-bottom: 4px;
       display: block;
       text-align: right;
       font-weight: 600;
       font-size: 12px;
       color: #999;
+      line-height: 16px;
     }
 
     &__link {
       position: absolute;
+      padding-bottom: 3px;
       left: 50px;
-      bottom: 33px;
+      bottom: 42px;
+      color: $main;
       border-bottom: 1px solid $main;
+      font-weight: 400;
+      transform: scale(1);
+      transition: transform .2s, ease-in;
 
+      &:focus {
+        outline: 2px solid $active;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      :active {
+        color: $active;
+      }
+    }
+
+    &__img {
+      display: block;
+      width: 500px;
+      height: 300px;
+      margin-bottom: 15px;
     }
   }
 
   &__button {
     display: block;
     margin: 0 auto;
-    width: 168px;
+    width: 188px;
     height: 55px;
     color: $main;
     font-size: 18px;
@@ -60,6 +86,7 @@
     text-align: center;
     border: 3px solid $main;
     border-radius: 50px;
+    cursor: pointer;
   }
 
 }

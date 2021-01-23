@@ -1,5 +1,5 @@
 .hero {
-  min-height: 700px;
+  padding-bottom: 122px;
   background-image: url('../img/hero_bg1.jpg');
   background-repeat: no-repeat;
   background-size: 101%;
@@ -7,6 +7,7 @@
   animation-name: bgs;
   animation-duration: 10s;
   animation-iteration-count: infinite;
+
 
   @keyframes bgs {
     0% {
@@ -25,12 +26,14 @@
 
   &-header {
     width: 100%;
-    min-height: 70px;
     background-color: rgba(0, 0, 0, 0.4);
     padding-top: 20px;
+    padding-bottom: 21px;
+    margin-bottom: 52px;
   }
 
   &-wrapper {
+    padding-top: 1px;
     display: flex;
   }
 
@@ -48,9 +51,16 @@
       font-size: 18px;
       font-weight: 400;
       transition: color .2s ease;
+      background-color: rgba(0, 0, 0, .0);
+      border: none;
+
 
       &:active {
         color: $active;
+      }
+
+      &:focus {
+        outline: 2px solid $main;
       }
     }
 
@@ -63,13 +73,20 @@
     }
   }
 
-  &-dropdown {
+  &-dropwrap {
     position: absolute;
-    top: 30px;
+    top: 44px;
     width: 300px;
     height: 300px;
     padding: 40px;
     background: rgba(0, 0, 0, 0.4);
+  }
+
+  &-dropdown {
+    margin: 0;
+    height: 220px;
+
+
 
 
 
@@ -95,6 +112,10 @@
 
       &:hover {
         outline: 2px solid $main;
+      }
+
+      &:focus {
+        outline: 1px solid $main;
       }
 
       &::before {
@@ -148,7 +169,7 @@
 
     &__field {
       width: 218px;
-      padding-bottom: 7px;
+      padding-bottom: 2px;
       font-family: 'Open-sans';
       font-size: 18px;
       font-weight: 400;
@@ -169,7 +190,7 @@
       width: 22px;
       height: 22px;
       display: block;
-      margin-top: 5px;
+      margin-top: 6px;
       margin-right: 9px;
       background-color: rgba(0, 0, 0, 0);
       border: none;
@@ -204,24 +225,24 @@
       font-size: 72px;
       font-weight: 700;
       line-height: 84px;
-      margin-top: 50px;
-      margin-bottom: 0;
+      margin-bottom: 19px;
+      margin-top: 0;
     }
 
     &__text {
+      margin-top: 0;
+      margin-left: 3px;
+      margin-bottom: 91px;
       color: $white;
       font-weight: 700;
       font-size: 18px;
       line-height: 30px;
-      margin-top: 17px;
-      margin-left: 5px;
     }
 
     &__btn {
       width: 314px;
       height: 70px;
       display: block;
-      margin-top: 92px;
       border-radius: 100px;
       color: $white;
       font-size: 18px;
@@ -247,8 +268,8 @@
 
 
 .simplebar-track.simplebar-vertical {
-  top: 40px;
-  right: 19px;
+  top: 0px;
+  right: -21px;
   height: 220px;
   width: 2px;
   background-color: $main;
@@ -343,7 +364,6 @@
 @media(max-width: 1440px) {
   .hero {
 
-    min-height: 668px;
 
     &-header {
       display: none;
@@ -369,13 +389,9 @@
         line-height: 84px;
       }
 
-      &__text {
-        margin-top: 9px;
-      }
+      &__text {}
 
-      &__btn {
-        margin-top: 134px;
-      }
+      &__btn {}
     }
   }
 }
@@ -391,12 +407,10 @@
 
 @media(max-width: 540px) {
   .hero {
-    min-height: 310px;
 
     &-search {
       &__button {
         &_header {
-          margin-top: 0;
           width: 16px;
           height: 16px;
         }
@@ -418,7 +432,6 @@
       &__text {
         width: 270px;
         margin: 0 auto;
-        margin-top: 14px;
         font-size: 12px;
         font-weight: 400;
         text-align: center;
@@ -429,7 +442,6 @@
         width: 200px;
         height: 40px;
         margin: 0 auto;
-        margin-top: 40px;
         font-size: 12px;
 
       }
